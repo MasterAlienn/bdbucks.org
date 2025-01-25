@@ -16,7 +16,5 @@ function signUp() {
         document.getElementById("emaildiv").innerText = "\n";
     }
     let areSame = password == cpassword;
-    // if isAllowed is false give an error message (delete once done)
-
     console.log("email=" + email + "\ndomain=" + domain + "\nisAllowed=" + isAllowed + "\nusername=" + username + "\npassword=" + password + "\nconfirmed=" + areSame);
 }
