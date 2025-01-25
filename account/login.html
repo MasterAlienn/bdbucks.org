@@ -12,11 +12,12 @@
         <form action="../index.html" method="post">
             <label for="username">Username</label><br>
             <input type="username" id="username" placeholder="Enter your username">
-            <br>
+            <div class="divEMsg" id="userdiv"><br></div>
             <label for="password">Password</label><br>
             <input type="password" id="password" placeholder="Enter your password">
-            <br>
-            <input type="submit" title="Log In" value="Log In">
+            <div class="divEMsg" id="passdiv"><br></div>
+            <input onclick="logIn()" type="submit" title="Log In" value="Log In">
         </form>
+        <script src="../script.js"></script>
     </body>
 </html>

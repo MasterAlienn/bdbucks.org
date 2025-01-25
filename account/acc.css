@@ -10,6 +10,7 @@ h1 {
 form {
     text-align: center;
 }
-div {
-    text-align: left;
+.divEMsg {
+    color: #ff0000;
+    text-align: center;
 }
