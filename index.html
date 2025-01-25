@@ -15,8 +15,25 @@
             <a id="signup" title="Sign Up" href="account/signup.html">Sign Up</a>
             <a id="login" title="Log In" href="account/login.html">Log In</a>
         </header>
-        <form method="post">
-            <input type="hidden" name="">
+        <form method="dialog">
+            <label for="users">User</label><br>
+            <select title="Users" id="users" onchange="console.log(this.value)">
+                <option value="">Select a user:</option>
+                <option value="t0">Test0</option>
+                <option value="t1">Test1</option>
+                <option value="t2">Test2</option>
+            </select>
+            <diV id="balctrl">
+                <label for="ams">Operation</label><br>
+                <select title="ams" id="ams" onchange="">
+                    <option value="add">Add</option>
+                    <option value="minus">Subtract</option>
+                    <option value="set">Set</option>
+                </select><br>
+                <label for="amt">Amount</label><br>
+                <input title="amt" id="amt" type="number" min="0"><br>
+                <input title="Submit" type="submit" onclick="getChange()">
+            </diV>
         </form>
         <script src="script.js"></script>
     </body>
