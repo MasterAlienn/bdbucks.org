@@ -23,9 +23,9 @@ function getChange() {
         if (!response.ok) {
             throw new Error("Can't get file");
         }
-        return response.text();
+        return response.json();
     }).then(data => {
-        users = JSON.parse(data);
+        users = data;
     }).catch(error => {
         console.error("There was something wrong with the fetch operation:", error);
     });
@@ -85,9 +85,9 @@ function signUp() {
         if (!response.ok) {
             throw new Error("Can't get file");
         }
-        return response.text();
+        return response.json();
     }).then(data => {
-        acc = JSON.parse(data);
+        acc = data;
     }).catch(error => {
         console.error("There was something wrong with the fetch operation:", error);
     });
