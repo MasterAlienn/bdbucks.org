@@ -11,17 +11,17 @@
         <h1>Sign Up</h1>
         <form action="../index.html" method="post">
             <label for="email">Email</label><br>
-            <input type="email" id="email" placeholder="Enter your email address" title="Email">
-            <div class="divEMsg" id="emaildiv"><br></div>
+            <input autocomplete="off" type="email" id="email" placeholder="Enter your email address" title="Email">
+            <div class="divErrMsg" id="emaildiv"><br></div>
             <label for="username">Username</label><br>
-            <input type="username" id="username" placeholder="Enter your username" title="Username">
-            <div class="divEMsg" id="userdiv"><br></div>
+            <input autocomplete="off" type="username" id="username" placeholder="Enter your username" title="Username">
+            <div class="divErrMsg" id="userdiv"><br></div>
             <label for="password">Password</label><br>
-            <input type="password" id="password" placeholder="Enter your password" title="Password">
-            <div class="divEMsg" id="passdiv"><br></div>
+            <input autocomplete="off" type="password" id="password" placeholder="Enter your password" title="Password">
+            <div class="divErrMsg" id="passdiv"><br></div>
             <label for="confirm">Confirm password</label><br>
-            <input type="password" id="confirm" placeholder="Enter your password again" title="Password">
-            <div class="divEMsg" id="confdiv"><br></div>
+            <input autocomplete="off" type="password" id="confirm" placeholder="Enter your password again" title="Password">
+            <div class="divErrMsg" id="confdiv"><br></div>
             <input onclick="signUp()" type="submit" title="Create Account" value="Create Account">
         </form>
         <script src="../script.js"></script>

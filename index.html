@@ -3,21 +3,23 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="google-adsense-account" content="ca-pub-2621540780997495">
+        <noscript>
+            <dialog>Please Enable Javascript</dialog>
+        </noscript>
         <title>Bulldog Bucks Manager</title>
         <link rel="icon" href="lib/favicon.ico">
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
         <header>
-            <h1>
-                Bulldog Bucks Manager
-            </h1>
+            <h1>Bulldog Bucks Manager</h1>
             <a id="signup" title="Sign Up" href="account/signup.html">Sign Up</a>
             <a id="login" title="Log In" href="account/login.html">Log In</a>
         </header>
-        <form method="dialog">
+        <form method="post">
             <label for="users">User</label><br>
-            <select title="Users" id="users" onchange="console.log(this.value)">
+            <select title="Users" id="users">
                 <option value="">Select a user:</option>
                 <option value="t0">Test0</option>
                 <option value="t1">Test1</option>
@@ -25,7 +27,7 @@
             </select>
             <diV id="balctrl">
                 <label for="ams">Operation</label><br>
-                <select title="ams" id="ams" onchange="">
+                <select title="ams" id="ams">
                     <option value="add">Add</option>
                     <option value="minus">Subtract</option>
                     <option value="set">Set</option>

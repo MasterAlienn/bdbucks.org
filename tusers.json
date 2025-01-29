@@ -1,0 +1,19 @@
+{
+    "users": [
+        {
+            "id": 1,
+            "name": "John Smith",
+            "balance": 100.50
+        },
+        {
+            "id": 2,
+            "name": "Jane Doe",
+            "balance": 75.25
+        },
+        {
+            "id": 3,
+            "name": "Bob Johnson",
+            "balance": 250.00
+        }
+    ]
+}
