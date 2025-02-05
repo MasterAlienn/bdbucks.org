@@ -1,0 +1,35 @@
+{
+    "users": {
+        "students": [
+            {
+                "name": "String",
+                "balance": "Number",
+                "credentials": {
+                    "email": "String",
+                    "username": "String",
+                    "password": "String"
+                }
+            }
+        ],
+        "teachers": [
+            {
+                "name": "String",
+                "credentials": {
+                    "email": "String",
+                    "username": "String",
+                    "password": "String"
+                }
+            }
+        ],
+        "pending": [
+            {
+                "name": "String",
+                "credentials": {
+                    "email": "String",
+                    "username": "String",
+                    "password": "String"
+                }
+            }
+        ]
+    }
+}

@@ -1,3 +1,4 @@
+// use localStorage to store data
 // delete setCookie once added to all functions needed
 function setCookie(name, value) {
     const date = new Date();
@@ -74,30 +75,30 @@ function logIn() {
     }
 }
 function signUp() {
-    let acc;
     const email = document.getElementById("email").value;
     const username = document.getElementById("username").value;
     const password = document.getElementById("password").value;
     const cpassword = document.getElementById("confirm").value;
     const domain = email.split("@")[1];
     const isAllowed = domain == "rocklandschools.org";
-    fetch("../tacc.json").then(response => {
-        if (!response.ok) {
-            throw new Error("Can't get file");
-        }
-        return response.json();
-    }).then(data => {
-        acc = data;
-    }).catch(error => {
-        console.error("There was something wrong with the fetch operation:", error);
-    });
     if (!isAllowed) {
         document.getElementById("emaildiv").innerHTML = "Invalid email";
     } else {
         document.getElementById("emaildiv").innerText = "\n";
     }
     const areSame = password == cpassword;
-    console.log("email=" + email + "\ndomain=" + domain + "\nisAllowed=" + isAllowed + "\nusername=" + username + "\npassword=" + password + "\nconfirmed=" + areSame);
+    if (isAllowed && areSame) {
+        let pac = {
+            operation: "mkacc",
+            data: {
+                acctype: "pending",
+                email: email,
+                username: username,
+                password: password
+            }
+        };
+        
+    }    
 }
 function getUsername() {
     return document.cookie.replace("username=", "");
