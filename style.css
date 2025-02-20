@@ -10,3 +10,7 @@ h1 {
 form {
     text-align: center;
 }
+.divErrMsg {
+    color: #ff0000;
+    text-align: center;
+}

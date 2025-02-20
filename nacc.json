@@ -2,6 +2,7 @@
     "users": {
         "students": [
             {
+                "id": "String",
                 "name": "String",
                 "balance": "Number",
                 "credentials": {
@@ -13,6 +14,7 @@
         ],
         "teachers": [
             {
+                "id": "String",
                 "name": "String",
                 "credentials": {
                     "email": "String",
